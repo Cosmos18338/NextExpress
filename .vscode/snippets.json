@@ -33,12 +33,7 @@
   },
   "exportNamedFunction": {
     "prefix": "enf",
-    "body": [
-      "export const ${1:functionName} = (${2:params}) => {",
-      "  $0",
-      "}",
-      ""
-    ],
+    "body": ["export const ${1:functionName} = (${2:params}) => {", "  $0", "}", ""],
     "description": "Export named function in ES7 syntax"
   },
   "exportDefaultFunction": {
@@ -191,11 +186,7 @@
   },
   "import React, { Component } & PropTypes": {
     "prefix": "imrcp",
-    "body": [
-      "import React, { Component } from 'react'",
-      "import PropTypes from 'prop-types'",
-      ""
-    ]
+    "body": ["import React, { Component } from 'react'", "import PropTypes from 'prop-types'", ""]
   },
   "import React, { PureComponent }": {
     "prefix": "imrpc",
@@ -215,11 +206,7 @@
   },
   "import React, { memo } & PropTypes": {
     "prefix": "imrmp",
-    "body": [
-      "import React, { memo } from 'react'",
-      "import PropTypes from 'prop-types'",
-      ""
-    ]
+    "body": ["import React, { memo } from 'react'", "import PropTypes from 'prop-types'", ""]
   },
   "import PropTypes": {
     "prefix": "impt",
@@ -615,32 +602,17 @@
   },
   "shouldComponentUpdate": {
     "prefix": "scu",
-    "body": [
-      "shouldComponentUpdate = (nextProps, nextState) => {",
-      "  $0",
-      "}",
-      ""
-    ],
+    "body": ["shouldComponentUpdate = (nextProps, nextState) => {", "  $0", "}", ""],
     "description": "Invoked before rendering when new props or state are being received. "
   },
   "componentWillUpdate": {
     "prefix": "cwup",
-    "body": [
-      "componentWillUpdate = (nextProps, nextState) => {",
-      "  $0",
-      "}",
-      ""
-    ],
+    "body": ["componentWillUpdate = (nextProps, nextState) => {", "  $0", "}", ""],
     "description": "DEPRECATED!!!. Invoked immediately before rendering when new props or state are being received."
   },
   "componentDidUpdate": {
     "prefix": "cdup",
-    "body": [
-      "componentDidUpdate = (prevProps, prevState) => {",
-      "  $0",
-      "}",
-      ""
-    ],
+    "body": ["componentDidUpdate = (prevProps, prevState) => {", "  $0", "}", ""],
     "description": "Invoked immediately after the component's updates are flushed to the DOM."
   },
   "componentWillUnmount": {
@@ -650,34 +622,17 @@
   },
   "getDerivedStateFromProps": {
     "prefix": "gdsfp",
-    "body": [
-      "static getDerivedStateFromProps(nextProps, prevState) {",
-      "  ${1}",
-      "}"
-    ],
+    "body": ["static getDerivedStateFromProps(nextProps, prevState) {", "  ${1}", "}"],
     "description": "Invoked after a component is instantiated as well as when it receives new props."
   },
   "getSnapshotBeforeUpdate": {
     "prefix": "gsbu",
-    "body": [
-      "getSnapshotBeforeUpdate = (prevProps, prevState) => {",
-      "  $0",
-      "}",
-      ""
-    ],
+    "body": ["getSnapshotBeforeUpdate = (prevProps, prevState) => {", "  $0", "}", ""],
     "description": "Called right before mutations are made (e.g. before the DOM is updated)"
   },
   "componentRender": {
     "prefix": "ren",
-    "body": [
-      "render() {",
-      "  return (",
-      "    <div>",
-      "      $0",
-      "    </div>",
-      "  )",
-      "}"
-    ],
+    "body": ["render() {", "  return (", "    <div>", "      $0", "    </div>", "  )", "}"],
     "description": "Basic render."
   },
   "createContext": {

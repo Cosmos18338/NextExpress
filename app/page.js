@@ -1,9 +1,25 @@
+"use client";
 import Image from "next/image";
 import styles from "./page.module.css";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    fetch("/api/hello")
+      .then((res) => res.json())
+      .then((data) => {
+        const { message } = data;
+        const show = document.querySelector(".show");
+        show.innerHTML = message;
+      });
+  });
+
   return (
     <div className={styles.page}>
+      <div className="useApi">
+        <h1>Use API</h1>
+        <div className="show"></div>
+      </div>
       <main className={styles.main}>
         <Image
           className={styles.logo}
