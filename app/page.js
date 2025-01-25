@@ -14,11 +14,22 @@ export default function Home() {
       });
   });
 
+  useEffect(() => {
+    fetch("/api/hello/test")
+      .then((res) => res.json())
+      .then((data) => {
+        const { message } = data;
+        const show = document.querySelector(".show");
+        show.innerHTML = message;
+      });
+  }, []);
+
   return (
     <div className={styles.page}>
       <div className="useApi">
         <h1>Use API</h1>
         <div className="show"></div>
+        <div></div>
       </div>
       <main className={styles.main}>
         <Image

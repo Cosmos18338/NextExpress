@@ -13,7 +13,7 @@ app.prepare().then(() => {
 
   // 自訂的 API 路由 (例如 /api 或 /api/hello)
 
-  server.use(helloServer);
+  server.use("/api/hello", helloServer);
 
   // Express 處理所有其他請求，並交給 Next.js 處理渲染
   server.all("*", (req, res) => {

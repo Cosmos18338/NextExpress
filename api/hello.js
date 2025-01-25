@@ -2,8 +2,14 @@ const express = require("express");
 
 const server = express();
 
-server.get("/api/hello", (req, res) => {
+server.get("/", (req, res) => {
   res.json({ message: "Hello from Express API!" });
 });
 
-export default server;
+server.get("/test", (req, res) => {
+  res.json({
+    message: "This is a test message from Express API!",
+  });
+});
+
+module.exports = server;
