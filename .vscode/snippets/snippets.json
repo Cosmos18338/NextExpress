@@ -257,6 +257,7 @@
   "reactFunctionalExportComponent": {
     "prefix": "rfce",
     "body": [
+      "use client",
       "import React from 'react'",
       "",
       "function ${1:${TM_FILENAME_BASE}}() {",
@@ -275,6 +276,7 @@
   "reactFunctionalComponent": {
     "prefix": "rfc",
     "body": [
+      "use client",
       "import React from 'react'",
       "",
       "export default function ${1:${TM_FILENAME_BASE}}() {",
@@ -291,6 +293,7 @@
   "reactFunctionalComponentWithPropTypes": {
     "prefix": "rfcp",
     "body": [
+      "use client",
       "import React from 'react'",
       "import PropTypes from 'prop-types'",
       "",
@@ -315,6 +318,7 @@
   "reactArrowFunctionComponent": {
     "prefix": "rafc",
     "body": [
+      "use client",
       "import React from 'react'",
       "",
       "const ${1:${TM_FILENAME_BASE}} = () => {",
@@ -333,6 +337,7 @@
   "reactArrowFunctionExportComponent": {
     "prefix": "rafce",
     "body": [
+      "use client",
       "import React from 'react'",
       "",
       "const ${1:${TM_FILENAME_BASE}} = () => {",
@@ -351,6 +356,7 @@
   "reactArrowFunctionComponentWithPropTypes": {
     "prefix": "rafcp",
     "body": [
+      "use client",
       "import React from 'react'",
       "import PropTypes from 'prop-types'",
       "",
@@ -1036,6 +1042,7 @@
   "setupTest": {
     "prefix": "stest",
     "body": [
+      "use client",
       "import React from 'react'",
       "import renderer from 'react-test-renderer'",
       "",
@@ -1055,6 +1062,7 @@
   "setupReactNativeTest": {
     "prefix": "sntest",
     "body": [
+      "use client",
       "import 'react-native'",
       "import React from 'react'",
       "import renderer from 'react-test-renderer'",
@@ -1075,6 +1083,7 @@
   "setupReactComponentTestWithRedux": {
     "prefix": "srtest",
     "body": [
+      "use client",
       "import React from 'react'",
       "import renderer from 'react-test-renderer'",
       "import { Provider } from 'react-redux'",
@@ -1101,6 +1110,7 @@
   "setupReactNativeTestWithRedux": {
     "prefix": "snrtest",
     "body": [
+      "use client",
       "import 'react-native'",
       "import React from 'react'",
       "import renderer from 'react-test-renderer'",
@@ -1141,6 +1151,7 @@
   "hocComponentWithRedux": {
     "prefix": "hocredux",
     "body": [
+      "use client",
       "import React from 'react'",
       "import PropTypes from 'prop-types'",
       "import { connect } from 'react-redux'",
@@ -1169,6 +1180,7 @@
   "hocComponent": {
     "prefix": "hoc",
     "body": [
+      "use client",
       "import React from 'react'",
       "import PropTypes from 'prop-types'",
       "",

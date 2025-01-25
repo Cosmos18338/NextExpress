@@ -1,8 +1,8 @@
 {
   "liveServer.settings.port": 5501,
-  // "editor.snippetSuggestions": "top",
   "editor.tabCompletion": "on",
   "files.associations": {
-    "pages/**/*.js": "javascriptreact"
+    "pages/**/*.js": "javascriptreact",
+    "components/**/*.js": "javascriptreact"
   }
 }
