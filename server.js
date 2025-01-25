@@ -6,13 +6,13 @@ const dev = process.env.NODE_ENV !== "production";
 const app = next({ dev });
 const handle = app.getRequestHandler();
 
+// 自訂的 API 路由引入的區塊
 const helloServer = require("./api/hello");
 
 app.prepare().then(() => {
   const server = express();
 
   // 自訂的 API 路由 (例如 /api 或 /api/hello)
-
   server.use("/api/hello", helloServer);
 
   // Express 處理所有其他請求，並交給 Next.js 處理渲染

@@ -4,15 +4,15 @@ import styles from "./page.module.css";
 import { useEffect } from "react";
 
 export default function Home() {
-  useEffect(() => {
-    fetch("/api/hello")
-      .then((res) => res.json())
-      .then((data) => {
-        const { message } = data;
-        const show = document.querySelector(".show");
-        show.innerHTML = message;
-      });
-  });
+  // useEffect(() => {
+  //   fetch("/api/hello")
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       const { message } = data;
+  //       const show = document.querySelector(".show");
+  //       show.innerHTML = message;
+  //     });
+  // });
 
   useEffect(() => {
     fetch("/api/hello/test")
