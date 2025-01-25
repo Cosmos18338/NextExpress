@@ -1,8 +1,10 @@
 {
   "liveServer.settings.port": 5501,
   "editor.tabCompletion": "on",
-  "files.associations": {
-    "pages/**/*.js": "javascriptreact",
-    "components/**/*.js": "javascriptreact"
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
   }
 }

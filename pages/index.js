@@ -2,13 +2,14 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import { useEffect } from "react";
+import Api from "@/components/api";
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <div className="useApi">
         <h1>Use API</h1>
-        <div className="show"></div>
+        <Api />
         <div></div>
       </div>
       <main className={styles.main}>
